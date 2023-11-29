@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Oswald:wght@300&family=Roboto&family=Rubik:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.whole{
+    display: flex;
+}
+.sidebar{
+     background-color: black;
+     color: antiquewhite;    /*rgb(133, 131, 131)*/
+     width: 150px;
+     height: 100vh;
+     font-family: 'Oswald', sans-serif;                           
+}
+.profileImage{
+    width: 80px;
+    height: 80px;
+    border-radius: 400px;
+    margin-left: 12px;
+    /* margin-top: 50px; */
+    /* margin-left: 50px; */
+}
+.sidebar nav{
+    padding: 20px;
+}
+.sidebar nav li{
+    list-style-type: none;                     /* To remove the dot points */
+    padding: 30px 0;
+    font-size: 20px;
+    margin-left: 23px ;
+    /* font-style: bold; */
+}
+.sidebar nav li a{
+  text-decoration: none;                           /* Removes Underline*/
+  color: rgb(170, 167, 167);
+ }
+ .homeBtn :active {
+   color:rgb(0, 255, 200) ;
+ }
+ .projectBtn :active{
+  color:rgb(0, 255, 200) ;
+ }
+ .contactBtn :active{
+  color:rgb(0, 255, 200) ;
+ }
+
+
+.main{
+    background-color: rgb(27, 27, 27);
+    width: 90vw;
+    height: 100vh; 
+    
+}
+.infoContainer{
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    margin: 120px auto;
+    justify-content: space-around;                               /* i dont know*/
+}
+.devIntro{
+    display: flex;
+    flex-direction: column;                                      /*Default is ROW */
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    /* padding-top: 0; */
+}
+.hi{
+  font-size: 40px;
+}
+.name{
+  font-size: 40px;
+
+}
+.about{
+  font-size: 40px;
+}
+.moreabout{
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 3px;
+}
+.button1{
+  background-color:rgb(27, 27, 27);
+  color:rgb(0, 255, 200) ;
+  width: 180px;
+  height: 40px;
+  margin-top : 30px;
+  padding: 6px auto;
+  font-size: 13px;
+  border-color: rgb(0, 255, 200);
+  border-style: solid;
+  border-width: 1px;
+  font-family: 'Manrope', sans-serif;
+  cursor: pointer;
+}
+.button1:active{
+  margin-left: 2px;
+  transition: 0.3s;
+
+}
+.webDevPic img{
+  width: 450px;                                /* Can make vp/vh */
+  height: 300px;
+  margin-top: 90px;
+  }
+
+  /*space for resume button*/
+
+  .contactElements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 900px;                                /* Makes it rigid (not flex)-- we can have vh, vw approach*/
+    height: 300px;
+    margin: 120px auto;
+    padding: 50px 20px;
+    color: white;
+  }
+  .contactInfo{
+    /* color: white; */
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
+  }
+  .contactName{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 3px;
+    font-size: 18px;
+  }
+  .contactEmail{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .contactEmail a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  .contactMessage{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .projects{
+    display: flex;
+    width: 70vw;
+    height: 60vh;
+    margin-top: 200px;
+    margin-left: 100px;
+    color: white;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif; 
+  }
+  .project1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .projects h1{
+    font-size: 25px;
+  }
+  .projects h3{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .projects h4{
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(0, 255, 200) ;
+  }
+  .project2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 700px) {
+    /* *{
+      background-color: brown;
+    } */
+    /* .sidebar{
+      transform: translate(-200px,0px);
+      position: absolute;
+    } */
+  }
